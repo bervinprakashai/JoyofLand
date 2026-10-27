@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>JoyNestHomes.com</title>
+    <meta name="description" content="Plots for sale with photos, size, landmarks and amenities.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Figtree:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="top">
+      <div class="wrap">
+        <a class="logo" href="index.html">JoyNestHomes.com</a>
+        <nav>
+          <a href="index.html#lands">Lands</a>
+          <a href="index.html#how">How it works</a>
+		  <a href="sell.html">List your property</a>
+        </nav>
+        <a class="wa" href="https://wa.me/919840154753">WhatsApp us</a>
+      </div>
+    </header>
+    <section class="hero">
+      <div class="wrap">
+        <h1>Turning Dreams into Addresses</h1>
+        <p>We specialize in connecting you with the perfect plots, houses, and sustainable solar solutions tailored to your lifestyle.</p>
+        <div class="btns">
+          <a class="btn" href="#lands">Browse lands</a>
+          <a class="btn ghost" href="https://wa.me/919840154753">Chat on WhatsApp</a>
+        </div>
+      </div>
+    </section>
+    <section class="sec" id="lands">
+      <div class="wrap">
+        <h2>Available lands</h2>
+        <div class="bar">
+          <input id="q" type="search" placeholder="Search by name or location" aria-label="Search lands">
+          <select id="sort" aria-label="Sort lands">
+            <option value="">Sort: Default</option>
+            <option value="pa">Price: low to high</option>
+            <option value="pd">Price: high to low</option>
+            <option value="ar">Size: largest first</option>
+          </select>
+          <span id="count" aria-live="polite"></span>
+        </div>
+        <div class="grid" id="grid">
+          
+          <a class="card" href="property-1.html" data-price="94 L" data-area="1050 Sq Ft">
+            <div class="im">
+              <img src="images/land5-1.jpg" alt="Sai Nagar" loading="lazy" onerror="this.style.visibility='hidden'">
+              <span class="badge">1020 Sq Ft</span>
+            </div>
+            <div class="cb">
+              <h3>Sai Nagar</h3>
+              <p>Iyyapanthangal</p>
+              <p class="pr">91.8 L</p>
+            </div>
+          </a>
+		    <a class="card" href="property-2.html" data-price="94 L" data-area="1050 Sq Ft">
+            <div class="im">
+              <img src="images/land5-1.jpg" alt="Sai Nagar" loading="lazy" onerror="this.style.visibility='hidden'">
+              <span class="badge">1050 Sq Ft</span>
+            </div>
+            <div class="cb">
+              <h3>Sai Nagar</h3>
+              <p>Iyyapanthangal</p>
+              <p class="pr">94 L</p>
+            </div>
+          </a>
+		    <a class="card" href="property-3.html" data-price="94 L" data-area="1050 Sq Ft">
+            <div class="im">
+              <img src="images/land5-1.jpg" alt="Sai Nagar" loading="lazy" onerror="this.style.visibility='hidden'">
+              <span class="badge">1050 Sq Ft</span>
+            </div>
+            <div class="cb">
+              <h3>Sai Nagar</h3>
+              <p>Iyyapanthangal</p>
+              <p class="pr">94 L</p>
+            </div>
+          </a>
+		   <a class="card" href="property-4.html" data-price="94 L" data-area="1050 Sq Ft">
+            <div class="im">
+              <img src="images/land5-5.jpg" alt="Sai Nagar" loading="lazy" onerror="this.style.visibility='hidden'">
+              <span class="badge">1050 Sq Ft</span>
+            </div>
+            <div class="cb">
+              <h3>Sai Nagar</h3>
+              <p>Iyyapanthangal</p>
+              <p class="pr">94 L</p>
+            </div>
+          </a>
+          <!--/CARDS-->
+        </div>
+        <p class="empty" id="empty" hidden>No lands match your search. Clear the search box to see all lands.</p>
+      </div>
+    </section>
+    <section class="sec" id="how">
+      <div class="wrap">
+        <h2>How buying works</h2>
+        <div class="steps">
+          <div>
+            <h3>Browse</h3>
+            <p>Check photos, size, landmarks and amenities for each land.</p>
+          </div>
+          <div>
+            <h3>Message us</h3>
+            <p>Send your name and phone number. We reply on WhatsApp.</p>
+          </div>
+          <div>
+            <h3>Visit the site</h3>
+            <p>See the land in person before you decide.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="wrap">Questions about a land? Message us on <a href="https://wa.me/919999999999">WhatsApp</a>. </div>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>

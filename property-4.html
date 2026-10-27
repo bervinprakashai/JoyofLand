@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>JoyNestHomes.com | JoyNestHomes.com</title>
+    <meta name="description" content="Plots for sale with photos, size, landmarks and amenities.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Figtree:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="top">
+        <div class="wrap"><a class="logo" href="index.html">JoyNestHomes.com</a>
+            <nav><a href="index.html#lands">Lands</a><a href="index.html#how">How it works</a></nav><a class="wa" href="https://wa.me/919840154753">WhatsApp us</a></div>
+    </header>
+    <main class="detail wrap">
+        <div class="crumb"><a href="index.html">All lands</a> / LAND NAME</div>
+        <h1>Sai Nagar</h1>
+        <p class="sub">Iyyapanthangal</p>
+        <div class="gal">
+            <button type="button" id="open" aria-label="Open photo full screen"><img id="main" src="images/land1-1.jpg" alt="LAND NAME"></button>
+            <button type="button" class="gb" id="gp" aria-label="Previous photo">‹</button>
+            <button type="button" class="gb" id="gn" aria-label="Next photo">›</button><span id="gc"></span>
+            <div class="th">
+                <button type="button" aria-label="Photo 1"><img src="images/land5-5.jpg" alt="LAND NAME photo 1" onerror="this.style.visibility='hidden'"></button>
+                <button type="button" aria-label="Photo 2"><img src="images/land5-2.jpg" alt="LAND NAME photo 2" onerror="this.style.visibility='hidden'"></button>
+                <button type="button" aria-label="Photo 3"><img src="images/land5-3.jpg" alt="LAND NAME photo 3" onerror="this.style.visibility='hidden'"></button>
+                <button type="button" aria-label="Photo 4"><img src="images/land5-4.jpg" alt="LAND NAME photo 4" onerror="this.style.visibility='hidden'"></button>
+            </div>
+        </div>
+        <div class="facts">
+            <div class="f"><span>Plot Area</span><b>1080 sq ft</b></div>
+            <div class="f"><span>Dimensions(L X B)</span><b>45*24</b></div>
+            <div class="f"><span>Price</span><b>94 L</b></div>
+            <div class="f"><span>Road width</span><b>30 Feet</b></div>
+        </div>
+        <div class="cols">
+            <div>
+                <h2>More Details</h2>
+                <table>
+                    <tr>
+                        <th>Sq.Ft Rate</th>
+                        <td>9000</td>
+                    </tr>
+                    <tr>
+                        <th>Landmarks</th>
+                        <td>Close to Porur, DLF IT Park.</td>
+                    </tr>
+					 
+                </table>
+                <h2>Distance</h2>
+                <ul class="am">
+                    <li>From Cassgrand Osaka  : 0.5 km</li>
+                    <li>From Bai Kadai stop, Mugalivakkam : 1.5 km/li>
+					<li>From Iyyapanthangal Bus Stand : 2 km/li>
+                </ul>
+            </div>
+            <aside class="enq" id="enquire">
+                <h2>Enquire about this land</h2>
+                <p>Send your details and we reply on WhatsApp.</p>
+                <form onsubmit="return send()" novalidate>
+                    <label>Your name
+                        <input id="nm" autocomplete="name">
+                    </label>
+                    <label>Phone number
+                        <input id="ph" type="tel" autocomplete="tel">
+                    </label>
+                    <label>Message
+                        <textarea id="ms" rows="3">I am interested in this land. Please share more details.</textarea>
+                    </label>
+                    <p class="err" id="er" hidden>Enter your name and a valid phone number.</p>
+                    <button class="btn" type="submit">Send on WhatsApp</button>
+                </form>
+            </aside>
+        </div>
+        <nav class="pn"><a href="property-4.html">‹ Previous</a><a href="index.html">Next ›</a></nav>
+    </main>
+    <div class="mbar"><a class="btn" href="#enquire">Enquire on WhatsApp</a></div>
+    <div id="lb" hidden role="dialog" aria-label="Photo viewer">
+        <button id="lbx" aria-label="Close">✕</button>
+        <button id="lp" aria-label="Previous">‹</button><img id="lbi" alt="">
+        <button id="ln" aria-label="Next">›</button>
+    </div>
+    <footer>
+        <div class="wrap">Questions about a land? Message us on <a href="https://wa.me/919840154753">WhatsApp</a>.</div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>

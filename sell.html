@@ -1,0 +1,15 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>List your property | Our Lands</title><meta name="description" content="Plots for sale with photos, size, landmarks and amenities."><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Figtree:wght@400;600&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"></head><body><header class="top"><div class="wrap"><a class="logo" href="index.html">Our Lands</a><nav><a href="index.html#lands">Lands</a><a href="index.html#how">How it works</a><a href="sell.html">List your property</a></nav><a class="wa" href="https://wa.me/919999999999">WhatsApp us</a></div></header><main class="wrap sell"><div class="crumb"><a href="index.html">Home</a> / List your property</div>
+<h1>Want to sell your property?</h1>
+<p class="lead">If you are interested to add property to get leads, please contact us using WhatsApp. Fill in the details below and we will receive them on WhatsApp.</p>
+<form class="card-form" onsubmit="return sendListing()" novalidate>
+<div class="fg"><label>Name<input id="s-name" autocomplete="name"></label>
+<label>Mobile No<input id="s-mob" type="tel" autocomplete="tel"></label>
+<label>City<input id="s-city" autocomplete="address-level2"></label>
+<label>Plot Area in Sq.Ft<input id="s-area" type="number" min="0" inputmode="numeric"></label>
+<label>Sq.Ft Rate<input id="s-rate" type="number" min="0" inputmode="numeric"></label>
+<label>Price<input id="s-price" placeholder="Auto-filled from area × rate"></label>
+<label>Dimensions (L X B)<span class="dim"><input id="s-l" placeholder="Length" inputmode="numeric" aria-label="Length"><b>×</b><input id="s-b" placeholder="Breadth" inputmode="numeric" aria-label="Breadth"></span></label>
+<label>Facing<select id="s-face"><option value="">Select facing</option><option>East</option><option>West</option><option>North</option><option>South</option><option>North-East</option><option>North-West</option><option>South-East</option><option>South-West</option></select></label>
+<label class="full">Landmarks<textarea id="s-land" rows="3" placeholder="Nearby temple, school, highway, etc."></textarea></label></div>
+<p class="err" id="s-err" hidden>Enter your name and a valid mobile number.</p>
+<button class="btn" type="submit">Send on WhatsApp</button></form></main><footer><div class="wrap">Questions about a land? Message us on <a href="https://wa.me/919999999999">WhatsApp</a>.</div></footer><script src="app.js"></script></body></html>
